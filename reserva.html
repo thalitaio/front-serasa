@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Hospedagem</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header">
+            <img class="logo" src="img/logo.png" alt="FGA Viagens" />
+        </header>
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Promoções</a></li>
+                <li><a href="passagens.html">Passagens</a></li>
+                <li><a href="hospedagem.html">Hospedagem</a></li>
+                <li><a href="#">Pacotes</a></li>
+            </ul>
+
+        </nav>
+
+        <section>
+            <form name="reserva" method="post" enctype="multipart/form-data" action="#">
+                <label for="nome"> Nome: 
+                    <input type="text" id="nome" class="form-text" required maxlength="35" 
+                    placeholder="Informe nome completo"/>
+                </label>
+                <label for="email"> Email: 
+                    <input type="email" id="email" class="form-text" required maxlength="100"
+                    placeholder="user@teste.com" />
+                </label>
+                <label for="tel"> Tel: 
+                    <input type="tel" id="tel" class="form-text" required maxlength="15" 
+                    placeholder="(xx)9999-99999" />
+                </label>
+                <label for="hoteis">Hoteis e Resorts:</label>
+                <select id="hoteis" name="hoteis">
+                    <option value="Cancun Bay">Cancun Bay Resort</option>
+                    <option value="Coral Beach">Coral Beach Resort</option>
+                    <option value="Haven Riviera">Haven Riviera Resort</option>
+                </select>
+                <label for="adultos">Adultos:</label>
+                <input type="number" id="adultos" name="adultos" min="1" max="6" />
+                <label for="crianças">Crianças:</label>
+                <input type="number" id="crianças" name="crianças" min="1" max="3" />
+
+               <label for="checkin"> Check-in: <input type="date" name="checkin" id="checkin"></label>
+               <label for="checkout"> Check-out: <input type="date" name="checkout" id="checkout"></label>
+
+
+                <input type="submit" id="enviar" />
+            </form>
+
+
+
+        </section>
+
+
+
+
+
+        <footer>
+            <img src="img/logo.png" alt="FGA Viagens" />
+            
+            <ul>
+                <li>Insta</li>
+                <li>Twitter</li>
+                <li>Face</li>
+            </ul>
+            <p>
+                &copy; FGA Tech - Brasil - 2022
+            </p>
+        </footer>
+
+
+    </div>
+
+</body>
+
+</html>
